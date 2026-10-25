@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sean Carlo D. Democer – Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav aria-label="Resume sections">
+  <a href="#objective">Objective</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#awards">Awards and certifications</a>
+  <span class="spacer"></span>
+  <button id="theme" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Toggle dark mode">
+    <svg class="eye-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+    <svg class="eye-closed" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.9 10.9 0 0 1 12 19C5 19 1 12 1 12a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A9.1 9.1 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19M14.12 14.12a3 3 0 1 1-4.24-4.24"/><path d="M1 1l22 22"/></svg>
+  </button>
+</nav>
+
+<main>
+  <header class="hero">
+    <div class="photo" id="photo">
+      <img src="photo.jpg" alt="Sean Carlo D. Democer" onerror="this.remove();document.getElementById('photo').textContent='SD'">
+    </div>
+    <div>
+      <h1>Sean Carlo D. Democer</h1>
+      <p class="role" id="role" aria-label="BSIT student seeking an internship"></p>
+      <div class="contacts">
+        <a class="chip">09616107881</a>
+        <a class="chip" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&fs=1&to=seancarlodemocer19@gmail.com&su=Internship%20Inquiry">seancarlodemocer19@gmail.com</a>
+        <a class="chip" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Southville+8C+San+Isidro+Rodriguez+Rizal">Blk 2 Lot 2 Southville 8C, Brgy. San Isidro, Rodriguez, Rizal</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="objective">
+    <h2>Objective</h2>
+    <div class="card">
+      <p style="margin:0">BSIT student with a strong foundation in programming, database management, and networking, seeking an internship opportunity to apply technical skills and gain hands-on experience in the IT industry.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="entry">
+        <h3>BS Information Technology</h3>
+        <div><a class="school" href="https://www.facebook.com/ThePUPOfficial" target="_blank" rel="noopener">Polytechnic University of the Philippines</a></div>
+        <div class="meta">Sta. Mesa, Manila · 2024 – Present</div>
+      </div>
+      <div class="entry">
+        <h3>TVL: Information and Communication Technology</h3>
+        <div><a class="school" href="https://www.facebook.com/profile.php?id=61556288150166" target="_blank" rel="noopener">Graceville National High School</a></div>
+        <div class="meta">CSJDM, Bulacan · 2022 – 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <div id="filters" class="tags" style="margin-bottom:16px" role="group" aria-label="Filter skills">
+        <button class="chip on" type="button" data-f="all">All</button>
+        <button class="chip" type="button" data-f="prog">Programming</button>
+        <button class="chip" type="button" data-f="web">Web</button>
+        <button class="chip" type="button" data-f="office">Microsoft Office</button>
+      </div>
+      <div class="skill-group"><h4>Programming languages</h4>
+        <div class="tags"><span class="tag" data-g="prog">Java</span><span class="tag" data-g="prog">C</span><span class="tag" data-g="prog">C++</span></div></div>
+      <div class="skill-group"><h4>Web</h4>
+        <div class="tags"><span class="tag" data-g="web">HTML</span><span class="tag" data-g="web">CSS</span><span class="tag" data-g="web">JavaScript</span></div></div>
+      <div class="skill-group" style="margin:0"><h4>Microsoft Office</h4>
+        <div class="tags"><span class="tag" data-g="office">Word</span><span class="tag" data-g="office">Excel</span><span class="tag" data-g="office">PowerPoint</span></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <a class="project" href="https://github.com/pams-ous/pams-ous" target="_blank" rel="noopener" aria-label="PAM on GitHub (opens in a new tab)">
+        
+        <h3>PAM</h3>
+        <p>A system for PUPOUS.</p>
+        <span class="role-tag">Database</span>
+      </a>
+      <a class="project" href="https://github.com/AyenMejorada/gitaway-hotel-reservation-system" target="_blank" rel="noopener" aria-label="GitAway on GitHub (opens in a new tab)">
+        
+        <h3>GitAway</h3>
+        <p>Hotel Reservation System.</p>
+        <span class="role-tag">Backend development</span>
+      </a>
+      <a class="project" href="https://github.com/YpjvMlyuhuklg/Fitness_Analytics_Project" target="_blank" rel="noopener" aria-label="PyPulse on GitHub (opens in a new tab)">
+        
+        <h3>PyPulse</h3>
+        <p>A Python-driven analytics system for health and fitness tracking.</p>
+        <span class="role-tag">Frontend development</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards and certifications</h2>
+    <div class="cert">
+      <button type="button" aria-expanded="false">
+        <span><span class="arrow">▸</span> 2024 F2F Career Development Talk</span>
+        <span class="when">October 2024</span>
+      </button>
+      <div class="more"><div><p>Issued by Silicon Valley HQ Philippines, Inc.</p></div></div>
+    </div>
+    <div class="cert">
+      <button type="button" aria-expanded="false">
+        <span><span class="arrow">▸</span> Programming (Java) NC III</span>
+        <span class="when">September 2025</span>
+      </button>
+      <div class="more"><div><p>Issued by JOYSIS TechVoc, Inc.</p></div></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
